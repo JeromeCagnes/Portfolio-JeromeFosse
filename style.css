@@ -139,12 +139,14 @@ header {
 }
 .logo img {
   margin-top: 40px;
+  float: left;
   width: 30%;
   height: auto;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 50px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.5);
   border-radius: 60%;
-  transition: transform 2s cubic-bezier(0.4, 0, 0.2, 1); /* Accélération rapide et décélération lente */
+  transition: transform 3s cubic-bezier(0.4, 0.5, 0.2, 1.5); /* Accélération rapide et décélération lente */
   transform-style: preserve-3d; /* S'assure que la transformation 3D est bien rendue */
+  padding-right: 5px;
 }
 
 .logo img:hover {
@@ -159,11 +161,11 @@ nav ul {
 }
 
 nav a:hover {
-  color: yellow;
-  border-top: solid #0065fc 5px;
-  padding-top: 20px;
-  transform: scale(1.5); /* Grossit l'élément de 10% au survol */
-  transition: transform 0.3s ease-in-out; /* Rend la transition plus douce */
+  color: rgb(255, 229, 82);
+  padding-top: 5px;
+  transform: scale(1.9);
+  transition: transform 0.5s ease-in-out, color 0.3s ease-in-out;
+  box-shadow: 0 5px 10px goldenrod; /* Ajoute une ombre sous le lien */
 }
 
 /***************** Création d'une marge interieure de 50px sous le header ******************/
@@ -522,19 +524,29 @@ input:-webkit-autofill {
 }
 
 /******** CARDS ACTIVITES ***************/
-
 .cards {
   background-color: white;
   box-sizing: border-box;
-
   filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.07));
   border-radius: 20px;
-  opacity: 0.8;
+  opacity: 0.91;
 }
+
 .cards:hover {
   opacity: 1;
   transition: transform 0.5s;
-  transform: scale(1.03);
+  transform: scale(1.03); /* Zoom léger sur la carte */
+}
+
+.cards img {
+  transition: transform 0.5s ease;
+  display: block; /* Élimine l'espace blanc sous les images */
+}
+
+.cards:hover img {
+  transform: scale(1.1); /* Zoom plus significatif sur l'image */
+  cursor: zoom-in;
+  box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.85);
 }
 
 /**** Activités à Marseille ****/
@@ -560,7 +572,6 @@ input:-webkit-autofill {
   background-color: #63e6be;
   width: 25%;
   margin-left: 35px;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
 .projets-cards img {
@@ -568,6 +579,8 @@ input:-webkit-autofill {
   height: 370px;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
   box-sizing: border-box;
   object-fit: cover;
 }
@@ -580,7 +593,7 @@ input:-webkit-autofill {
 
 .title-section {
   margin-top: 60px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   margin-left: 60px;
   font-size: 23px;
 }
