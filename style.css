@@ -380,16 +380,14 @@ input:-webkit-autofill {
 
 .card img,
 .cards img {
-  /******* rajout de cette classe pour les cards activités à marseille *****/
   object-fit: cover;
 }
 
 .card-title {
-  font-size: 16px;
-}
-
-.euro {
-  font-weight: 700;
+  font-size: 12px;
+  color: bisque;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000; /* Cette configuration ajoute un contour noir autour du texte */
 }
 
 .neutralStar {
@@ -534,22 +532,32 @@ input:-webkit-autofill {
 
 .cards:hover {
   opacity: 1;
-  transition: transform 0.5s;
-  transform: scale(1.03); /* Zoom léger sur la carte */
+  transition: transform 2s;
 }
-
 .cards img {
-  transition: transform 0.5s ease;
   display: block; /* Élimine l'espace blanc sous les images */
 }
 
 .cards:hover img {
-  transform: scale(1.1); /* Zoom plus significatif sur l'image */
+  /* Zoom plus significatif sur l'image */
+  transform: scale(1.2); /* Zoom léger sur la carte */
+  transition: transform 2s ease;
   cursor: zoom-in;
   box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.85);
 }
+.img-magnifier-container {
+  position: relative;
+}
 
-/**** Activités à Marseille ****/
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #000;
+  border-radius: 50%;
+  cursor: none;
+  /* Taille de la loupe */
+  width: 100px;
+  height: 100px;
+}
 
 .section-activites {
   box-sizing: border-box;
@@ -589,11 +597,12 @@ input:-webkit-autofill {
   margin: 20px;
   font-size: 35px;
   text-align: center;
+  padding-top: 30px;
 }
 
 .title-section {
   margin-top: 60px;
-  margin-bottom: 30px;
+  margin-bottom: 45px;
   margin-left: 60px;
   font-size: 23px;
 }
@@ -609,6 +618,7 @@ input:-webkit-autofill {
   padding-left: 20px;
   border-radius: 2%;
   padding-bottom: 20px;
+  opacity: 0.6;
 }
 
 .footer-list {
