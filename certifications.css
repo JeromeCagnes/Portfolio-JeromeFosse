@@ -2,11 +2,10 @@
   font-family: 'Handlee', cursive;
   font-weight: 100;
   font-style: italic;
-  text-decoration: none;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  color: white;
+  color: bisque;
 }
 
 html {
@@ -15,9 +14,39 @@ html {
   margin-right: auto;
 }
 
-.fa-solid {
-  color: #c800fc;
+.nav-list {
+  display: flex;
+  flex-direction: column; /* Change l'orientation en colonne */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: fixed; /* Fixe la navigation à gauche */
+  left: 0; /* Alignement à gauche */
+  top: 0; /* Démarre du haut de la page */
+  height: 100%; /* Prend toute la hauteur */
 }
+
+.nav {
+  flex: 1;
+}
+
+.nav a:hover {
+  color: rgb(255, 229, 82);
+  box-shadow: 0 5px 10px goldenrod;
+}
+
+.nav-link {
+  text-decoration: none;
+  text-align: left; /* Alignement du texte à gauche */
+  padding: 16px; /* Ajustez selon vos besoins */
+  display: block; /* Étend les liens sur toute la largeur du conteneur */
+  font-size: 16px;
+}
+
+.nav-list::after {
+  content: none; /* Supprime la barre, car elle peut ne pas bien s'intégrer avec l'orientation verticale */
+}
+
 .custom-background {
   background-position: center center;
   background-repeat: no-repeat;
@@ -44,12 +73,25 @@ html {
   justify-content: center;
   gap: 20px;
   padding: 20px;
+  margin-top: 130px;
 }
 
 .pdf-item iframe {
   width: 300px;
   height: 200px;
   border: none;
+  cursor: pointer;
+}
+
+.pdf-item.zoomed iframe:hover {
+  position: fixed; /* Positionne l'élément de manière fixe par rapport à la fenêtre du navigateur */
+  top: 50%;
+  left: 50%;
+  width: 90vw; /* 90% de la largeur de la fenêtre du navigateur */
+  height: 90vh; /* 90% de la hauteur de la fenêtre du navigateur */
+  transform: translate(-50%, -50%);
+  z-index: 1000; /* S'assure que l'élément est au-dessus des autres éléments */
+  border: 2px solid black; /* Optionnel: Ajoute une bordure pour distinguer l'élément zoomé */
 }
 
 .content h2 {
@@ -195,11 +237,9 @@ p {
     1px 1px 0 #000;
 }
 
-audio {
-  height: 35px;
-  width: 250px;
+.section-footer {
+  display: none;
 }
-/* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */

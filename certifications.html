@@ -9,6 +9,8 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Roboto:wght@300;700&display=swap"
       rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
       integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
       crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -21,41 +23,111 @@
       <div class="certifications-titre">
          <h4>CERTIFICATIONS</h4>
       </div>
-      <div class="logo">
-         <a href="index.html"><img src="assets/WebDev.jpg" alt="webdev"></a>
-      </div>
-      <div class="conteneur-previous-bouton">
-         <div class="bouton-retour">
-            <a href="index.html"><img src="assets/icons8-back-50.png" alt="boutonretour"></a>
-         </div>
-      </div>
-   </header>
-   <section class="pdf-gallery">
-      <div class="pdf-item">
-         <iframe src="assets/certificats/2739284871.pdf" allowfullscreen></iframe>
-      </div>
-      <div class="pdf-item">
-         <iframe src="assets/certificats/3025530294.pdf" allowfullscreen></iframe>
-      </div>
-      <div class="pdf-item">
-         <iframe src="assets/certificats/4076750859.pdf" allowfullscreen></iframe>
-      </div>
-      <div class="pdf-item">
-         <iframe src="assets/certificats/6932509643.pdf" allowfullscreen></iframe>
-      </div>
-      <div class="pdf-item">
-         <iframe src="assets/certificats/7776584499.pdf" allowfullscreen></iframe>
-      </div>
-      <div class="pdf-item">
-         <iframe src="assets/certificats/7863692410.pdf" allowfullscreen></iframe>
-      </div>
-      <div class="pdf-item">
-         <iframe src="assets/certificats/8699226490.pdf" allowfullscreen></iframe>
-      </div>
-      <div class="pdf-item">
-         <iframe src="assets/certificats/9308376499.pdf" allowfullscreen></iframe>
-      </div>
-      <div class="pdf-item">
-         <iframe src="assets/certificats/CERTIFICAT GITHUB.pdf" allowfullscreen></iframe>
-      </div>
-   </section>
+      <!--NAVBAR-->
+      <div class="main-container">
+         <header>
+            <nav class="site-nav">
+               <ul class="nav-list">
+                  <li class="nav">
+                     <a href="index.html" class="nav-link -active">«« Retour accueil</a>
+                  </li>
+                  <!-- Ajoutez d'autres éléments de liste ici si nécessaire -->
+               </ul>
+            </nav>
+
+            <div class="logo">
+               <a href="index.html"><img src="assets/WebDev.jpg" alt="webdev"></a>
+            </div>
+
+         </header>
+         <section class="pdf-gallery">
+            <div class="pdf-item" onclick="zoomPDF(this)">
+               <iframe src="assets/certificats/2739284871.pdf" allowfullscreen></iframe>
+            </div>
+            <div class="pdf-item" onclick="zoomPDF(this)">
+               <iframe src="assets/certificats/3025530294.pdf" allowfullscreen></iframe>
+            </div>
+            <div class="pdf-item" onclick="zoomPDF(this)">
+               <iframe src="assets/certificats/4076750859.pdf" allowfullscreen></iframe>
+            </div>
+            <div class="pdf-item" onclick="zoomPDF(this)">
+               <iframe src="assets/certificats/6932509643.pdf" allowfullscreen></iframe>
+            </div>
+            <div class="pdf-item" onclick="zoomPDF(this)">
+               <iframe src="assets/certificats/7776584499.pdf" allowfullscreen></iframe>
+            </div>
+            <div class="pdf-item" onclick="zoomPDF(this)">
+               <iframe src="assets/certificats/7863692410.pdf" allowfullscreen></iframe>
+            </div>
+            <div class="pdf-item" onclick="zoomPDF(this)">
+               <iframe src="assets/certificats/8699226490.pdf" allowfullscreen></iframe>
+            </div>
+            <div class="pdf-item" onclick="zoomPDF(this)">
+               <iframe src="assets/certificats/9308376499.pdf" allowfullscreen></iframe>
+            </div>
+            <div class="pdf-item" onclick="zoomPDF(this)">
+               <iframe src="assets/certificats/CERTIFICAT GITHUB.pdf" allowfullscreen alt="certificat-github"></iframe>
+            </div>
+         </section>
+         <footer>
+
+            <section class="section-footer">
+               <section class="contacts">
+                  <div id="contacts">
+                     <h2 class="contacts">Contacts</h2>
+                  </div>
+                  <ul class="info-list">
+                     <i class="fa-regular fa-envelope"></i>
+                     <li><a href="#">foss.jerome@yahoo.fr</a></li>
+                     <i class="fa-solid fa-location-dot"></i>
+                     <li><a href="#">Cagnes sur mer - ALPES MARITIMES - FRANCE</a></li>
+
+                  </ul>
+
+                  <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+                  <script>
+                     window.formbutton = window.formbutton || function () { (formbutton.q = formbutton.q || []).push(arguments) };
+                     formbutton("create", {
+                        action: "https://formspree.io/f/mleqwwqv",
+                        title: "Comment puis-je vous aider ?",
+                        fields: [
+                           {
+                              type: "email",
+                              label: "Email:",
+                              name: "email",
+                              required: true,
+                              placeholder: "votre@email.com"
+                           },
+                           {
+                              type: "textarea",
+                              label: "Message:",
+                              name: "message",
+                              placeholder: "Qu'avez-vous en tête ?",
+                           },
+                           { type: "submit" }
+                        ],
+                        styles: {
+                           title: {
+                              backgroundColor: "gray"
+                           },
+                           button: {
+                              backgroundColor: "gray"
+                           }
+                        }
+                     });
+                  </script>
+
+                  <audio controls autoplay>
+                     <source src="assets/audio/Blue Ending Day4.mp3" type="audio/mp3">
+                     Votre navigateur ne prend pas en charge l'élément audio.
+                  </audio>
+                  <p class="audio-caption">
+                     Blue Ending Day © Jérôme Fossé 2024
+                  </p>
+         </footer>
+         <!--
+   <script src="certifications.js"></script>
+-->
+</body>
+
+</html>
