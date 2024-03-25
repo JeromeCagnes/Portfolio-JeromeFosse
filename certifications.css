@@ -1,12 +1,14 @@
 * {
-  font-family: 'Madimi One', sans-serif;
+  font-family: 'Handlee', cursive;
   font-weight: 100;
   font-style: italic;
+  text-decoration: none;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  color: bisque;
+  color: white;
 }
+
 html {
   max-width: 1460px;
   margin-left: auto;
@@ -29,19 +31,17 @@ html {
   text-align: center;
   padding: 50px 0;
 }
-.email-button {
-  display: inline-block;
-  background-color: #007bff; /* Couleur de fond */
-  color: #ffffff; /* Couleur du texte */
-  text-decoration: none; /* Supprime le soulignement */
-  padding: 10px 20px; /* Espacement interne */
-  border-radius: 5px; /* Bords arrondis */
-  font-size: 16px; /* Taille du texte */
-  transition: background-color 0.3s; /* Transition pour l'effet au survol */
+.conteneur-previous-bouton {
+  position: absolute;
+  top: 67%; /* Ajustez cette valeur selon la hauteur de votre logo */
+  left: 59px; /* Ajustez selon la position horizontale désirée */
+  transform: translateY(10px); /* Ajustez pour l'espacement sous le logo */
+  font-size: 10px;
+  margin-left: 30px;
 }
-
-.email-button:hover {
-  background-color: #0056b3; /* Couleur de fond au survol */
+.bouton-retour {
+  width: 10%;
+  height: auto;
 }
 
 .content h2 {
@@ -182,7 +182,7 @@ nav a:hover {
 
 h4 {
   display: flex;
-  font-size: 22px;
+  font-size: 40px;
   margin-top: 0px;
   margin-bottom: 8px;
   padding-left: 18px;
