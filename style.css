@@ -100,7 +100,23 @@ a:hover {
   padding: 0 2rem;
   box-sizing: border-box;
 }
-
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  margin-left: 10px;
+  color: #c800fc;
+}
 .projets-title {
   margin: 0;
   font-size: 22px;
@@ -111,14 +127,16 @@ a:hover {
 ul {
   list-style-type: none;
   display: flex;
+  margin-top: 25px;
 }
 
 a {
   text-decoration: none;
   color: white;
-  font-size: 22px;
+  font-size: 25px;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
+  margin-left: 30px;
 }
 
 /************ En-tête HEADER ************/
@@ -172,19 +190,57 @@ nav a:hover {
 
 /***************** Création d'une marge interieure de 50px sous le header ******************/
 
-/******** Main - 1ère section Titre et paragraphe ******/
+/***Présentation***/
 
 .textes {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+  margin-top: 40px;
 }
-.texte-intro img {
+.texte-intro1 img {
   border-radius: 30px;
   opacity: 0.8;
-  margin-top: 45px;
-  width: 45%;
+  width: 35%;
   box-shadow: 0 15px 10px goldenrod;
+  margin-top: 30px;
+  padding: 10px;
+  margin-left: 40px;
+}
+.texte-intro2 img {
+  border-radius: 30px;
+  opacity: 0.8;
+  width: 35%;
+  box-shadow: 0 15px 10px goldenrod;
+  margin-top: 30px;
+  padding: 10px;
+  margin-left: 20%;
+}
+.texte-intro3 img {
+  border-radius: 30px;
+  opacity: 0.8;
+  width: 35%;
+  box-shadow: 0 15px 10px goldenrod;
+  margin-top: 30px;
+  padding: 10px;
+  margin-left: 40px;
+}
+.texte-intro4 img {
+  border-radius: 30px;
+  opacity: 0.8;
+  width: 35%;
+  box-shadow: 0 15px 10px goldenrod;
+  margin-top: 30px;
+  padding: 10px;
+  margin-left: 20%;
+}
+.texte-intro5 img {
+  border-radius: 30px;
+  opacity: 0.8;
+  width: 35%;
+  box-shadow: 0 15px 10px goldenrod;
+  margin-top: 30px;
+  padding: 10px;
+  margin-left: 40px;
 }
 h1 {
   display: flex;
@@ -248,10 +304,9 @@ input:-webkit-autofill {
   width: auto;
   padding-left: 0;
   margin-top: 53px;
-
   justify-content: space-between;
   gap: 15px;
-  cursor: pointer;
+  cursor: none;
 }
 .box-filtre {
   display: flex;
@@ -262,8 +317,7 @@ input:-webkit-autofill {
 }
 .filtres {
   display: flex;
-  border: 1px solid #deebff;
-  border-radius: 25px; /**** plutôt que d'utiliser 4x border top/bottom-left/right-radius : 25px; *****/
+  border-radius: 25px;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
   align-items: center;
@@ -274,6 +328,7 @@ input:-webkit-autofill {
   padding: 6px 15px;
   width: auto;
   transition: background-color 2s ease;
+  margin-top: 25px;
 }
 
 .list-filtre {
@@ -293,8 +348,15 @@ input:-webkit-autofill {
     inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
-/********** Bulle info 500 logements ************/
-
+.nav-certifications:hover {
+  color: rgb(255, 229, 82);
+  text-shadow: 0 5px 10px goldenrod;
+}
+.material-symbols-outlined:hover {
+  color: rgb(255, 229, 82);
+  text-shadow: 0 5px 10px goldenrod;
+  cursor: pointer;
+}
 .info-logement {
   display: flex;
   margin-left: 20px;
@@ -430,7 +492,7 @@ input:-webkit-autofill {
   /* Zoom plus significatif sur l'image */
   transform: scale(1.2); /* Zoom léger sur la carte */
   transition: transform 2s ease;
-  cursor: zoom-in;
+  cursor: pointer;
   box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.85);
 }
 .img-magnifier-container {
@@ -492,7 +554,7 @@ input:-webkit-autofill {
   margin-top: 60px;
   margin-bottom: 45px;
   margin-left: 60px;
-  font-size: 23px;
+  font-size: 35px;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
 }
@@ -544,6 +606,7 @@ input:-webkit-autofill {
 audio {
   height: 35px;
   width: 250px;
+  margin-top: 20px;
 }
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
