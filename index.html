@@ -29,7 +29,7 @@
 
                <li class="nav"><a href="#projets" class="nav-link">Projets</a>
                </li>
-               <li class="nav"><a href="#contacts" class="nav-link">Contacts</a>
+               <li class="nav"><a href="#footer" class="nav-link">Contacts</a>
                </li>
             </ul>
 
@@ -122,60 +122,49 @@
                </section>
             </secton>
       </main>
-      <footer>
-
-         <section class="section-footer">
-            <!--
-            <section class="contacts">
-               <div id="contacts">
-                  <h2 class="contacts">Contacts</h2>
-               </div>
-               <ul class="info-list">
-                  <li>
-                     <span class="fa-regular fa-envelope"></span>
-                     <a href="mailto:foss.jerome@yahoo.fr">foss.jerome@yahoo.fr</a>
-                  </li>
-                  <li>
-                     <span class="fa-solid fa-location-dot"></span>
-                     <a href="#">Cagnes sur mer - ALPES MARITIMES - FRANCE</a>
-                  </li>
-               </ul>
-            -->
-         </section>
-         <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
-         <script src="animations.js"></script>
-         <script>
-            window.formbutton = window.formbutton || function () { (formbutton.q = formbutton.q || []).push(arguments) };
-            formbutton("create", {
-               action: "https://formspree.io/f/mleqwwqv",
-               title: "Comment puis-je vous aider ?",
-               fields: [
-                  {
-                     type: "email",
-                     label: "Email:",
-                     name: "email",
-                     required: true,
-                     placeholder: "votre@email.com"
-                  },
-                  {
-                     type: "textarea",
-                     label: "Message:",
-                     name: "message",
-                     placeholder: "Qu'avez-vous en tête ?",
-                  },
-                  { type: "submit" }
-               ],
-               styles: {
-                  title: {
-                     backgroundColor: "gray"
-                  },
-                  button: {
-                     backgroundColor: "gray"
+      <footer id="footer">
+         <div class="fixed-container">
+            <div class="contact-text">Contactez-moi</div>
+            <div class="arrow">
+               <span></span>
+               <span></span>
+               <span></span>
+            </div>
+            <script src="animations.js"></script>
+            <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+            <script>
+               window.formbutton = window.formbutton || function () { (formbutton.q = formbutton.q || []).push(arguments) };
+               formbutton("create", {
+                  action: "https://formspree.io/f/mleqwwqv",
+                  title: "Comment puis-je vous aider ?",
+                  fields: [
+                     {
+                        type: "email",
+                        label: "Email:",
+                        name: "email",
+                        required: true,
+                        placeholder: "votre@email.com"
+                     },
+                     {
+                        type: "textarea",
+                        label: "Message:",
+                        name: "message",
+                        placeholder: "Qu'avez-vous en tête ?",
+                     },
+                     { type: "submit" }
+                  ],
+                  styles: {
+                     title: {
+                        backgroundColor: "#63e6be"
+                     },
+                     button: {
+                        backgroundColor: "grey"
+                     }
                   }
-               }
-            });
-         </script>
+               });
 
+            </script>
+         </div>
          <audio controls autoplay>
             <source src="assets/audio/Blue Ending Day4.mp3" type="audio/mp3">
             Votre navigateur ne prend pas en charge l'élément audio.

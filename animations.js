@@ -1,3 +1,4 @@
+//ZOOM TEXTE INTRO
 window.addEventListener('scroll', function () {
   var scrollPosition = window.scrollY
   var selectors = [
