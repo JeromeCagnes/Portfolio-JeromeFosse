@@ -261,16 +261,6 @@ h1 {
     1px 1px 0 #000;
 }
 
-input {
-  outline: none;
-  /**** //DEFAUT ACCESSIBILITE -EN PLACE POUR LE VISUEL MAQUETTE // pas de marge sur le champ de saisie de recherche quand sélectionné *****/
-}
-
-input:-webkit-autofill {
-  /*** trouvé sur google, permet de retirerle fond (bleu en l'occurence) ***/
-  -webkit-box-shadow: 0 0 0 1000px white inset; /*** propre à chrome "Chrome pré-remplis certains champs de formulaires"  ***/
-}
-
 /*********** Menu FILTRES **********/
 
 .box-filtre h2 {
@@ -357,72 +347,8 @@ input:-webkit-autofill {
   text-shadow: 0 5px 10px goldenrod;
   cursor: pointer;
 }
-.info-logement {
-  display: flex;
-  margin-left: 20px;
-  margin-top: 20px;
-  gap: 10px;
 
-  justify-content: start;
-}
-
-.info-logement i {
-  display: flex;
-  border: 1px solid #d9d9d9;
-  color: #0065fc;
-  box-sizing: border-box;
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-  width: 25px;
-  height: 25px;
-  margin-top: 0px;
-  margin-bottom: 15px;
-}
-
-.info-logement p {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  margin-bottom: 80px;
-  padding-left: 10px;
-  font-weight: 100;
-}
-
-/****** Hebergements And Populaires (partie de code fournie)***********/
-
-.hebergements-and-populaires {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-}
-
-.hebergements-and-populaires section {
-  border-radius: 20px;
-  padding: 30px;
-  box-sizing: border-box;
-  margin-top: 28px;
-  margin-left: 19px;
-}
-.populaires-title {
-  display: flex;
-  white-space: nowrap;
-}
-.populaires-title .fa-chart-line {
-  margin-left: 100px;
-}
-.populaires-gris {
-  background-color: var(--main-bg-color);
-  border-radius: 20px;
-  padding: 30px;
-  box-sizing: border-box;
-  margin-top: 27px;
-  margin-left: 13px;
-}
-
-/******** CARDS (partie du code fournie + ajout perso .cards-img ***************/
+/******** CARDS ***************/
 
 .card {
   background-color: white;
@@ -504,7 +430,6 @@ input:-webkit-autofill {
   border: 3px solid #000;
   border-radius: 50%;
   cursor: none;
-  /* Taille de la loupe */
   width: 100px;
   height: 100px;
 }
@@ -561,7 +486,6 @@ input:-webkit-autofill {
 }
 
 /***** FOOTER *******/
-/* Assurez-vous que le conteneur du formulaire est bien structuré pour s'aligner avec votre design, sans besoin de positionnement fixe */
 .form-container {
   display: flex;
   flex-direction: column; /* Si vous souhaitez que les éléments soient empilés verticalement */
