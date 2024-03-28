@@ -74,7 +74,7 @@ html {
   justify-content: center;
   gap: 20px;
   padding: 20px;
-  margin-top: 94px;
+  margin-top: 22px;
 }
 
 .pdf-item iframe {
@@ -110,6 +110,13 @@ html {
   justify-content: space-around; /* Espacement autour des éléments */
   align-items: center; /* Alignement vertical */
 }
+.text-competences {
+  font-size: 22px;
+  color: white transparent;
+  text-align: center;
+  margin-top: 85px;
+  padding: 0 10px;
+}
 .title-and-icon {
   display: flex;
   align-items: center; /* Alignement vertical */
@@ -137,7 +144,7 @@ html {
 .pdf-api,
 .pdf-github {
   font-size: 18px;
-  color: yellow;
+  color: bisque;
 }
 
 .pdf-item {
@@ -154,7 +161,7 @@ html {
 .fa-brands,
 .fab {
   font-weight: 900;
-  color: yellow;
+  color: bisque;
 }
 .content button {
   background-color: #000; /* Couleur du fond */
@@ -273,7 +280,7 @@ header {
 
 h4 {
   display: flex;
-  font-size: 40px;
+  font-size: 50px;
   margin-top: 10px;
   margin-bottom: 50px;
   padding-left: 18px;

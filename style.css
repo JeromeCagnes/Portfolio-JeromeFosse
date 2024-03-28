@@ -365,7 +365,7 @@ h1 {
   font-size: 12px;
   color: bisque;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000; /* Cette configuration ajoute un contour noir autour du texte */
+    1px 1px 0 #000;
   padding-bottom: 25px;
 }
 .card-title:hover {
@@ -403,11 +403,10 @@ h1 {
   transition: transform 2s;
 }
 .cards img {
-  display: block; /* Élimine l'espace blanc sous les images */
+  display: block;
 }
 
 .cards:hover img {
-  /* Zoom plus significatif sur l'image */
   transform: scale(1.2); /* Zoom léger sur la carte */
   transition: transform 2s ease;
   box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.85);
@@ -478,8 +477,8 @@ h1 {
 /***** FOOTER *******/
 .form-container {
   display: flex;
-  flex-direction: column; /* Si vous souhaitez que les éléments soient empilés verticalement */
-  align-items: center; /* Centrer les éléments horizontalement*/
+  flex-direction: column;
+  align-items: center;
 }
 .fixed-container {
   position: fixed;
@@ -533,6 +532,16 @@ h1 {
     opacity: 0;
     transform: rotate(315deg) translate(-20px, -20px);
   }
+}
+/* Ajustement de la taille de texte du formulaire */
+.formbutton-form label,
+.formbutton-form p,
+.formbutton-form input,
+.formbutton-form textarea {
+  font-size: 14px;
+}
+.formbutton-form .form-title {
+  font-size: 16px;
 }
 
 .audio-caption {
