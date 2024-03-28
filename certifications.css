@@ -82,11 +82,12 @@ html {
   height: 200px;
   border: none;
   cursor: pointer;
+  transition: transform 0.5s ease-in-out;
 }
 .pdf-item iframe:hover {
   opacity: 1;
   transition: transform 0.5s;
-  transform: scale(1.9);
+  transform: scale(1.4);
 }
 .pdf-item.zoomed iframe:hover {
   position: fixed; /* Positionne l'élément de manière fixe par rapport à la fenêtre du navigateur */
@@ -96,18 +97,65 @@ html {
   height: 90vh; /* 90% de la hauteur de la fenêtre du navigateur */
   transform: translate(-50%, -50%);
   z-index: 1000; /* S'assure que l'élément est au-dessus des autres éléments */
-  border: 2px solid black; /* Optionnel: Ajoute une bordure pour distinguer l'élément zoomé */
+  border: 4px solid black; /* Optionnel: Ajoute une bordure pour distinguer l'élément zoomé */
 }
 .pdf-logo {
-  font-size: 30px; /* Ajustez la taille selon vos besoins */
-  color: #f0db4f; /* Couleur officielle de JavaScript, ajustez selon vos besoins */
+  font-size: 18px;
+  color: #f0db4f;
+  font-weight: 900;
+}
+.title-logo-wrapper {
+  display: flex;
+  flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+  justify-content: space-around; /* Espacement autour des éléments */
+  align-items: center; /* Alignement vertical */
+}
+.title-and-icon {
+  display: flex;
+  align-items: center; /* Alignement vertical */
+  justify-content: center; /* Centrage horizontal, ajustez si nécessaire */
+  gap: 10px; /* Espacement entre le texte et l'icône */
+}
+
+.pdf-title {
+  font-size: 20px;
+  margin-top: 10px;
+  color: rgba(255, 255, 0, 0.856);
+}
+.pdf-logo {
+  margin: 0; /* Supprime les marges par défaut pour une alignement précis */
+}
+
+.pdf-logo,
+.pdf-terminal,
+.pdf-html5,
+.pdf-css3,
+.pdf-debug,
+.pdf-design,
+.pdf-facebook,
+.pdf-sass,
+.pdf-api,
+.pdf-github {
+  font-size: 18px;
+  color: yellow;
+}
+
+.pdf-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Maintient l'alignement centré des iframes */
+  text-align: center;
 }
 
 .content h2 {
   color: #fff; /* Ajustez la couleur selon le besoin */
   margin-bottom: 20px;
 }
-
+.fa-brands,
+.fab {
+  font-weight: 900;
+  color: yellow;
+}
 .content button {
   background-color: #000; /* Couleur du fond */
   color: #fff; /* Couleur du texte */
