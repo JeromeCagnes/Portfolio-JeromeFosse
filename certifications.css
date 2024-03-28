@@ -41,10 +41,11 @@ html {
   padding: 16px; /* Ajustez selon vos besoins */
   display: block; /* Étend les liens sur toute la largeur du conteneur */
   font-size: 16px;
+  margin-top: 15px;
 }
 
 .nav-list::after {
-  content: none; /* Supprime la barre, car elle peut ne pas bien s'intégrer avec l'orientation verticale */
+  content: none;
 }
 
 .custom-background {
@@ -73,7 +74,7 @@ html {
   justify-content: center;
   gap: 20px;
   padding: 20px;
-  margin-top: 130px;
+  margin-top: 94px;
 }
 
 .pdf-item iframe {
@@ -82,7 +83,11 @@ html {
   border: none;
   cursor: pointer;
 }
-
+.pdf-item iframe:hover {
+  opacity: 1;
+  transition: transform 0.5s;
+  transform: scale(1.9);
+}
 .pdf-item.zoomed iframe:hover {
   position: fixed; /* Positionne l'élément de manière fixe par rapport à la fenêtre du navigateur */
   top: 50%;
@@ -92,6 +97,10 @@ html {
   transform: translate(-50%, -50%);
   z-index: 1000; /* S'assure que l'élément est au-dessus des autres éléments */
   border: 2px solid black; /* Optionnel: Ajoute une bordure pour distinguer l'élément zoomé */
+}
+.pdf-logo {
+  font-size: 30px; /* Ajustez la taille selon vos besoins */
+  color: #f0db4f; /* Couleur officielle de JavaScript, ajustez selon vos besoins */
 }
 
 .content h2 {
@@ -183,17 +192,21 @@ header {
 .logo {
   order: 0;
   margin-bottom: 20px;
+  text-align: center; /* Centrage horizontal du contenu du conteneur .logo */
 }
+
 .logo img {
   margin-top: 40px;
-  float: left;
   width: 30%;
   height: auto;
   box-shadow: 0 50px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.5);
   border-radius: 60%;
-  transition: transform 3s cubic-bezier(0.4, 0.5, 0.2, 1.5); /* Accélération rapide et décélération lente */
-  transform-style: preserve-3d; /* S'assure que la transformation 3D est bien rendue */
+  transition: transform 3s cubic-bezier(0.4, 0.5, 0.2, 1.5);
+  transform-style: preserve-3d;
   padding-right: 5px;
+  display: block; /* Rend l'image traitée comme un bloc pour le centrage */
+  margin-left: auto; /* Centrage horizontal de l'image */
+  margin-right: auto; /* Centrage horizontal de l'image */
 }
 
 .logo img:hover {
@@ -213,11 +226,13 @@ header {
 h4 {
   display: flex;
   font-size: 40px;
-  margin-top: 0px;
-  margin-bottom: 8px;
+  margin-top: 10px;
+  margin-bottom: 50px;
   padding-left: 18px;
+  color: bisque;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
+  text-decoration: underline;
 }
 
 p {
