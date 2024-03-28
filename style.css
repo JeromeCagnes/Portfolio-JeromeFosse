@@ -316,11 +316,9 @@ h1 {
 /******** CERTIFICATIONS ***************/
 .nav-certifications {
   margin-top: 39px;
+  font-size: 20px;
 }
-.nav-certifications:hover {
-  color: rgb(255, 229, 82);
-  text-shadow: 0 5px 10px goldenrod;
-}
+
 .material-symbols-outlined:hover {
   color: rgb(255, 229, 82);
   text-shadow: 0 5px 10px goldenrod;
@@ -330,10 +328,12 @@ h1 {
 
 .github-link {
   margin-top: 15px;
+  margin-left: 40px;
+  font-size: 20px;
 }
 
 .fa-github {
-  margin-left: 52px;
+  margin-left: 15px;
   color: #c800fc;
 }
 .fa-github:hover {
